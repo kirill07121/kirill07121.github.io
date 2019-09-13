@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Тестовая страница</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <script type="text/javascript">
+      function checkAnswers()
+      {
+        var useranswer = document.getElementById("answer").value;
+        useranswer = useranswer.toLowerCase();
+        if (useranswer == "анастейша" || useranswer == "настя" || useranswer == "ананас" || useranswer == "анастасия")
+        {
+          alert("Умница, ты права");
+        }
+        else
+          alert("Вы явно ошибаетесь, сударыня");
+      }
+    </script>
+  </head>
+  <body>
+
+    <h1>
+      <p class = "img">Посвящаю Анастейше</p>
+    </h1>
+
+    <p class = "img">
+      <img src="./img/IMG_3072.jpg" alt="" width="400" height="400">
+    </p>
+
+    <br>
+    <p><big>Напишите имя самой прекрасной девушки на Земле</big></p>
+      <input type="text" id= "answer">
+    <br>
+      <a href="#" onClick="checkAnswers()">Ответить</a>
+    <br>
+
+  </body>
+</html>
