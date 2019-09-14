@@ -6,43 +6,7 @@
     <link rel="stylesheet" href="./style.css">
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $("body").css("display", "none");
-
-        $("body").fadeIn(2000);
-
-      $("a").click(function(event){
-        event.preventDefault();
-        linkLocation = this.href;
-        $("body").fadeOut(1000, redirectPage);
-      });
-
-      function redirectPage() {
-        window.location = linkLocation;
-      }
-    });
-
-    $(function(){
-    $('a[href^="#"]').click(function(){
-    var target = $(this).attr('href');
-    $('html, body').animate({scrollTop: $(target).offset().top}, 800);//800 - длительность скроллинга в мс
-    return false;
-    });
-  });
-
-    function checkAnswers()
-    {
-      var useranswer = document.getElementById("answer").value;
-      useranswer = useranswer.toLowerCase();
-      if (useranswer == "анастейша" || useranswer == "настя" || useranswer == "ананас" || useranswer == "анастасия")
-      {
-        alert("Умница, ты права");
-      }
-      else
-        alert("Вы явно ошибаетесь, сударыня");
-    }
-    </script>
+    <script type="text/javascript" src="./js/func.js"></script>
 
   </head>
   <body>
@@ -56,7 +20,7 @@
     </p>
 
     <br>
-    <p><big>Напишите имя самой прекрасной девушки на Земле</big></p>
+    <h2>Напишите имя самой прекрасной девушки на Земле</h2>
       <input type="text" id= "answer">
     <br>
     <br>

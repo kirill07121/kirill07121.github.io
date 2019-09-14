@@ -5,40 +5,21 @@
     <title>Зеленский_ТОП</title>
     <link rel="stylesheet" href="./style.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $("body").css("display", "none");
-
-        $("body").fadeIn(2000);
-
-      $("a.transition").click(function(event){
-        event.preventDefault();
-        linkLocation = this.href;
-        $("body").fadeOut(1000, redirectPage);
-      });
-
-      function redirectPage() {
-        window.location = linkLocation;
-      }
-    });
-
-    $(function(){
-$('a[href^="#"]').click(function(){
-var target = $(this).attr('href');
-$('html, body').animate({scrollTop: $(target).offset().top}, 800);//800 - длительность скроллинга в мс
-return false;
-});
-});
-    </script>
-
-
+    <script type="text/javascript" src="./js/func.js"></script>
 
   </head>
+
   <body>
-    <h1><p>Проверка</p></h1>
+    <h1><p>Зря ты сюда зашла....</p></h1>
     <p>
       <img src="./img/raz.jpg" alt="" width="400" height="400" >
     </p>
+    <br>
+    <br>
+    <a href="index.html" class="button">Хорошо;(</a>
+
+<audio  class="audio" src="./audio/muz.mp3" controls autoplay > </audio>
+
 
   </body>
 </html>
