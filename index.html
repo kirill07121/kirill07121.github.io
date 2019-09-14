@@ -6,12 +6,42 @@
     <link rel="stylesheet" href="./style.css">
 
 
-    <script type="text/javascript" src="./js/jquery-1.4.1.min.js"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("body").css("display", "none");
+
+        $("body").fadeIn(2000);
+
+      $("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1000, redirectPage);
+      });
+
+      function redirectPage() {
+        window.location = linkLocation;
+      }
+    });
+
+
+    function checkAnswers()
+    {
+      var useranswer = document.getElementById("answer").value;
+      useranswer = useranswer.toLowerCase();
+      if (useranswer == "анастейша" || useranswer == "настя" || useranswer == "ананас" || useranswer == "анастасия")
+      {
+        alert("Умница, ты права");
+      }
+      else
+        alert("Вы явно ошибаетесь, сударыня");
+    }
+    </script>
 
   </head>
   <body>
-
-
+    
     <h1>
       <p>Посвящаю любимой Анастейше</p>
     </h1>
@@ -26,6 +56,7 @@
     <br>
       <a href="#" onClick="checkAnswers()">Ответить</a>
     <br>
-    <a href="index1.html" class="transition">ТЫЦ</a>
+    <a href="index1.html" class="transition">Нажми на меня:)</a>
+
   </body>
 </html>
