@@ -29,7 +29,7 @@ function checkAnswers()
   useranswer = useranswer.toLowerCase();
   if (useranswer == "анастейша" || useranswer == "настя" || useranswer == "ананас" || useranswer == "анастасия")
   {
-    alert("Умница, ты права");
+    alert("Умница");
   }
   else
     alert("Вы явно ошибаетесь, сударыня");
