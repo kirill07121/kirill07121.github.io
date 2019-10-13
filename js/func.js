@@ -27,9 +27,9 @@ function checkAnswers()
 {
   var useranswer = document.getElementById("answer").value;
   useranswer = useranswer.toLowerCase();
-  if (useranswer == "анастейша" || useranswer == "настя" || useranswer == "ананас" || useranswer == "анастасия")
+  if (useranswer == "геля" || useranswer == "ангелина" || useranswer == "ангел" || useranswer == "ангелок")
   {
-    alert("Умница, ты права");
+    alert("Умница");
   }
   else
     alert("Вы явно ошибаетесь, сударыня");
