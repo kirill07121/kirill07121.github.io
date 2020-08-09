@@ -27,7 +27,7 @@ function checkAnswers()
 {
   var useranswer = document.getElementById("answer").value;
   useranswer = useranswer.toLowerCase();
-  if (useranswer == "настя" || useranswer == "анастейша" || useranswer == "ананас" || useranswer == "анастасия")
+  if (useranswer == "екатерина" || useranswer == "катя" || useranswer == "катюша")
   {
     alert("Умница");
   }
